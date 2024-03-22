@@ -7,12 +7,12 @@ import usePacientes from "../hooks/usePacientes";
 
 const Login = () => {
   const { setPacientes } = usePacientes();
+  const { setAuth } = useAuth();
 
   useEffect(() => {
     setPacientes([]);
+    setAuth({});
   }, []);
-
-  const { setAuth } = useAuth();
 
   const navigate = useNavigate();
 
