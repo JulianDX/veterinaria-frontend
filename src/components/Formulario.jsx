@@ -87,7 +87,7 @@ const Formulario = () => {
   return (
     <>
       <button
-        className="bg-white transition-colors duration-slow w-full p-3 text-cyan-950 font-bold cursor-pointer rounded-lg mb-4 md:hidden"
+        className="bg-white transition-colors duration-slow w-full p-3 text-orange-950 font-bold cursor-pointer rounded-lg mb-4 md:hidden"
         onClick={handleClick}
       >
         {visible ? "Ocultar Formulario" : "Mostrar Formulario"}
@@ -101,7 +101,7 @@ const Formulario = () => {
           className="font-semibold text-white text-xl text-center mb-7"
         >
           Añade tus pacientes y{" "}
-          <span className="text-cyan-400">Adminístralos</span>
+          <span className="text-orange-400">Adminístralos</span>
         </p>
         {msg && <Alerta alerta={alerta} />}
         <form action="/admin" onSubmit={handleSubmit}>
@@ -195,7 +195,7 @@ const Formulario = () => {
             />
           </div>
           <input
-            className="bg-sky-600 md:hover:bg-sky-700 transition-colors duration-slow w-full p-3 text-white font-bold cursor-pointer rounded-lg"
+            className="bg-orange-500 md:hover:bg-orange-600 transition-colors duration-slow w-full p-3 text-white font-bold cursor-pointer rounded-lg"
             type="submit"
             value={paciente?._id ? "Guardar Cambios" : "Agregar Paciente"}
           />

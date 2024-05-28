@@ -25,7 +25,7 @@ const ListadoPacientes = () => {
             </h2>
             <p className="font-semibold text-white text-xl text-center mb-7">
               Administra tus{" "}
-              <span className="text-cyan-400">Pacientes y Citas</span>
+              <span className="text-orange-400">Pacientes y Citas</span>
             </p>
             {pacientes.map((paciente) => {
               return <Paciente key={paciente._id} paciente={paciente} />;
@@ -39,7 +39,7 @@ const ListadoPacientes = () => {
               No hay pacientes
               <p className="font-semibold text-white text-xl text-center mb-7">
                 Agrega Pacientes y{" "}
-                <span className="text-cyan-400">Aparecerán aquí</span>
+                <span className="text-orange-400">Aparecerán aquí</span>
               </p>
             </h2>
           </div>

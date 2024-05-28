@@ -15,27 +15,27 @@ const Paciente = ({ paciente }) => {
 
   return (
     <div className="mx-5 my-10 bg-black bg-opacity-25 shadow-md px-5 py-5 rounded-xl">
-      <p className="font-extrabold text-cyan-400 my-2">
+      <p className="font-extrabold text-orange-400 my-2">
         Nombre:{" "}
         <span className="font-semibold normal-case text-white">{nombre}</span>
       </p>
-      <p className="font-extrabold text-cyan-400 my-2">
+      <p className="font-extrabold text-orange-400 my-2">
         Propietario:{" "}
         <span className="font-semibold normal-case text-white">
           {propietario}
         </span>
       </p>
-      <p className="font-extrabold text-cyan-400 my-2">
+      <p className="font-extrabold text-orange-400 my-2">
         Email de Contacto:{" "}
         <span className="font-semibold normal-case text-white">{email}</span>
       </p>
-      <p className="font-extrabold text-cyan-400 my-2">
+      <p className="font-extrabold text-orange-400 my-2">
         Fecha de Alta:{" "}
         <span className="font-semibold normal-case text-white">
           {formatearFecha(fecha_alta)}
         </span>
       </p>
-      <p className="font-extrabold text-cyan-400 my-2">
+      <p className="font-extrabold text-orange-400 my-2">
         Síntomas:{" "}
         <span className="font-semibold normal-case text-white">{sintomas}</span>
       </p>
