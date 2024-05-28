@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .root {
-    background-image: url("./paws.jpg");
+    background-image: url("../public/paws.jpg");
     background-position: center; background-repeat: no-repeat;
     background-size: cover; 
 }
