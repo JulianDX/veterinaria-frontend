@@ -29,12 +29,12 @@ const OlvidarPassword = () => {
   return (
     <>
       <div>
-        <h1 className="text-white font-black text-5xl text-center md:text-left">
+        <h1 className="text-white font-black text-5xl text-center md:text-left bg-orange-950 p-5 bg-opacity-95 rounded-xl">
           Recupera el Acceso a tu Cuenta y Administra tus{" "}
-          <span className="text-cyan-300">Pacientes</span>
+          <span className="text-orange-400">Pacientes</span>
         </h1>
       </div>
-      <div className="mt-10 md:mt-5 shadow-lg px-5 py-10 rounded-xl bg-black p-5 bg-opacity-30">
+      <div className="mt-10 md:mt-5 shadow-lg px-5 py-10 rounded-xl bg-orange-950 p-5 bg-opacity-95">
         {msg && <Alerta alerta={alerta} />}
         <form className="mt-5 md:mt-0" onSubmit={handleSubmit}>
           <div>
@@ -50,7 +50,7 @@ const OlvidarPassword = () => {
             />
           </div>
           <input
-            className="bg-cyan-600 transition-colors duration-slow w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 cursor-pointer md:hover:bg-cyan-700 md:w-auto"
+            className="bg-orange-500 transition-colors duration-slow w-full py-3 px-10 rounded-xl text-white uppercase font-bold mt-5 cursor-pointer md:hover:bg-orange-600 md:w-auto"
             type="submit"
             value="Actualizar Contraseña"
           />
@@ -58,11 +58,11 @@ const OlvidarPassword = () => {
         <nav className="mt-7 lg:flex lg:justify-between">
           <Link className="block text-center text-white" to="/">
             ¿Ya tienes una cuenta?{" "}
-            <span className="text-cyan-400 font-semibold">Inicia Sesión</span>
+            <span className="text-orange-500 font-semibold">Inicia Sesión</span>
           </Link>
           <Link className="block text-center text-white" to="/registrar">
             ¿No tienes una cuenta?{" "}
-            <span className="text-cyan-400 font-semibold">Regístrate</span>
+            <span className="text-orange-500 font-semibold">Regístrate</span>
           </Link>
         </nav>
       </div>
